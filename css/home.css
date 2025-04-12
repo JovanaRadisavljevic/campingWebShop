@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*  samo svuda dodaj #
-    teget: 13293D
-    zelena: 4d8b31
-    flora white: fffcf2
-    slate grey: 878e99
-*/
 nav { 
     background: #13293D;
     width: 100%;
@@ -94,7 +88,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 .hero > h1 {
     color: #fffcf2;
@@ -153,24 +147,22 @@ video {
     text-align: justify;
 }
 /*3.SEKCIJA */
-/*  samo svuda dodaj #
-    teget: 13293D
-    zelena: 4d8b31
-    flora white: fffcf2
-    slate grey: 878e99
-*/
 .s3-container{
     display: flex;
     flex-direction: column;
-    background-color: #4d8b31;
+    align-items: center;
     color: #fffcf2;
     padding: 30px 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 .s3-container h2{
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    color: #13293D;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #13293D;/*rgb(215, 215, 174)*/
+    background-color:rgb(204, 204, 183);
+    width: 20%;
+    border-radius: 10px;
 }
 .all-box{
     display: flex;
@@ -178,11 +170,11 @@ video {
     margin: 20px 5px;
     gap: 20px;
 }
-.box{ /*treba da bude teget*/ 
+.box{ 
     background-color: #13293D ;
     border-radius: 5%;
     font-size: 15px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px rgb(123, 120, 120);
    
 }
 .box:hover{
@@ -190,9 +182,12 @@ video {
     transition: 0.5s;
 }
 .box-img img{
-    border: #878e99 solid 2px;
+    border: white solid 2px;
     border-radius: 5%;
     width: 100%;
+}
+.box-img{
+    margin: 12px;
 }
 .box-opis{
     margin: 10px 30px;
@@ -201,8 +196,86 @@ video {
 .box-opis h3{
     text-align: center; 
 }
-footer{
-    background-color: #13293D ;
+/*CITAT 174700  69a54d*/
+.quote {
+    width: 100%;
+    background-color: rgb(215, 215, 174);
+    text-align: center;
+    padding: 40px 0;
 }
 
-  
+.citat {
+    display: inline-block;
+    background-color: #13293D;
+    color: #fffcf2;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*  samo svuda dodaj #
+    teget: 13293D
+    zelena: 4d8b31
+    flora white: fffcf2
+    slate grey: 878e99
+    bez: rgb(215, 215, 174) ili rgb(215, 215, 174)
+*/
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #13293D;
+    color: #fffcf2;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.f-desno,
+.f-levo {
+    flex: 1;
+    min-width: 300px;
+}
+
+.f-desno i {
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fffcf2;
+    padding-bottom: 10px;
+}
+
+.f-desno a {
+    color: #fffcf2;
+    text-decoration: none;
+    margin-left: 5px;
+    padding-bottom: 20px;
+}
+
+.f-desno p {
+    margin: 5px 0;
+    padding-bottom: 10px;
+}
+
+.f-desno i a {
+    margin-left: 5px;
+    color: #fffcf2;
+    text-decoration: none;
+}
+
+.f-levo h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.f-levo iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}

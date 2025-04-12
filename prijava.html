@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Prijava</title>
+    <link rel="stylesheet" href="./css/prijava.css">
 </head>
 <body>
+    <header style="width: 100%;">
+        <nav>
+            <div class="nav-levo">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <a href="index.html">Home</a>
+                <a href="satori.html">Satori</a>
+                <a href="rancevi.html">Rancevi</a>
+                <a href="recepti.html">Recepti</a>
+            </div>
+            <div class="nav-desno">
+                <a href="korpa.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Korpa</a>
+                <button><a href="prijava.html">Prijavi se</a></button>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="login-container">
+            <h2>Registruj se i postani novi član</h2>
+            
+            <div class="login-polja">
+                <input type="text" placeholder="Korisničko ime" />
+                <input type="email" placeholder="Email adresa" />
+                <input type="password" placeholder="Šifra" />
+            </div>
+            
+            <div class="uslovi">
+                <input type="checkbox" name="prihvatam" id="prihvatam" />
+                <label for="prihvatam">Prihvatam uslove</label>
+            </div>
+            
+            <button type="submit">Prijavi se</button>
+        </div>
+    </section>
     
+    <footer>
+        <i class="fa fa-globe" aria-hidden="true" style="font-size:80px; padding:10px 50px 10px 30px;"></i>
+        <div class="f-desno">
+            
+            <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:mejl@gmail">Kontaktirajte nas putem mejl nalog</a></i>
+            <i class="fa fa-user-circle-o" aria-hidden="true"><a href="tel:+38165656565">Kontaktirajte nas putem telefona</a></i>
+            <i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/">Instagram</a></i>
+            <i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/">Facebook</a></i>
+            
+            <p>&copy; 2025 Kamp i oprema</p>
+        </div>
+        <div class="f-levo">
+            <h3>Kako do nas?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11595.39119118386!2d21.4130556!3d43.40111055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755d81d8563cc19%3A0x748997d6106db7e5!2z0IjQsNGB0YLRgNC10LHQsNGG!5e0!3m2!1ssr!2srs!4v1744486342048!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
 </body>
 </html>
