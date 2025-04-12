@@ -182,6 +182,12 @@ video {
     background-color: #13293D ;
     border-radius: 5%;
     font-size: 15px;
+    box-shadow: 5px 5px 10px black;
+   
+}
+.box:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .box-img img{
     border: #878e99 solid 2px;
