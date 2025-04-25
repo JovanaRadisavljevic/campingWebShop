@@ -176,21 +176,32 @@ section {
     border-radius: 8px;
     font-size: 16px;
 }
-
-.uslovi {
+.input-group{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    font-size: 14px;
+    flex-direction: row;
+    gap: 20px;
 }
-
-.uslovi input {
+.input-group i{
     margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.input-group input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+}
+.input-group input:focus{
+    outline: none;
+    border: none;
 }
 
-button {
+#dugme-prijava {
     background-color: #005f73;
+    background-image: linear-gradient(to right, #4facfe, #00f2fe);
     color: #fffcf2;
     padding: 12px 25px;
     border: none;
@@ -200,6 +211,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+#dugme-prijava:hover {
     background-color: #0a9396;
 }

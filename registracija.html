@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Prijava</title>
-    <link rel="stylesheet" href="./css/prijava.css">
+
+    <title>Registracija</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/registracija.css">
 </head>
 <body>
     <header style="width: 100%;">
@@ -23,27 +25,59 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="login-container">
-            <h2>Prijava</h2>
-            
-            <div class="login-polja">
+    <section class="registracija-section">
+        <h2>Kreiraj nalog</h2>
+        <div class="form-container">
+            <form >
                 <div class="input-group">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <input type="text" placeholder="Unesite username"><br>
+                    <input type="text" name="ime_prezime" placeholder="Ime i prezime" required><br>
                 </div>
+                
                 <div class="input-group">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="email" name="email" placeholder="Unesite email" required><br>
+                    <input type="email" name="email" placeholder="Unesite vaš email" required><br>
                 </div>
+                
                 <div class="input-group">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" placeholder="Unesite šifru" /><br>
+                    <input type="password" name="lozinka" placeholder="Unesite lozinku" required><br>
                 </div>
-            </div>
-            
-            <button type="submit" id="dugme-prijava">Prijavi se</button>
+                
+                <div class="input-group">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" name="ponovi_lozinku" placeholder="Ponovite lozinku" required><br>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="text" name="telefon" placeholder="Unesite vaš telefon" required><br>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                    <input type="text" name="adresa" placeholder="Unesite vašu adresu" required><br>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <input type="date" name="datum_rodjenja" placeholder="Unesite vaš datum rođenja" required><br>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                    <select name="pol" required>  
+                        <option value="" disabled selected>Odaberite pol</option>
+                        <option value="muski">Muški</option>
+                        <option value="zenski">Ženski</option>
+                    </select><br>
+                </div>
+                
+                <button class="dugme-submit">Registruj se</button>
+                
+            </form>
         </div>
+
     </section>
     
     <footer>

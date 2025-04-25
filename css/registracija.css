@@ -1,0 +1,11 @@
+.registracija-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 60px 20px;
+    background-image: url("../images/loginPozadina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
