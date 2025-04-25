@@ -153,14 +153,25 @@ section {
     padding: 40px 30px;
     border-radius: 12px;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin: 35px;
 }
 
 .login-container h2 {
     margin-bottom: 25px;
-    font-size: 22px;
+    font-size: 28px;
+}
+.login-container p{
+    display: flex;
+    justify-content: flex-start;
+    padding: 17px;
+}
+.login-container a {
+    text-decoration: none;
+    color: white;
+    margin-left: 21px;
 }
 
 .login-polja {
@@ -212,5 +223,6 @@ section {
 }
 
 #dugme-prijava:hover {
-    background-color: #0a9396;
+    opacity: 0.9;
+    transform: scale(1.05);
 }

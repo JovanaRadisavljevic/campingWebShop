@@ -1,11 +1,77 @@
-.registracija-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    padding: 60px 20px;
+body{
     background-image: url("../images/loginPozadina.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
+}
+.registracija-section{
+    background-color: rgba(19, 41, 61, 0.5);
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+.registracija-section h2{
+    color: white;
+    text-align: center;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.input-group i{
+    font-size: 20px;
+    margin: 0 10px;
+    color: #13293D;
+}
+.input-group input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+}
+.input-group input:focus{
+    outline: none;
+    border: none;
+}
+.input-group select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+.form-container{
+    text-align: center;
+}
+.uslovi{
+    color: white;
+    display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     margin: 20px 20px 20px 10px;
+     font-size: 14px;
+     flex-direction: row;
+     gap: 20px;
+     font-size: 18px;
+}
+.dugme-submit{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: medium;
+}
+
+.dugme-submit:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
 }
