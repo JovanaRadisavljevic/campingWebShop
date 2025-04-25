@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Camping</title>
     <link rel="stylesheet" href="./css/home.css">
 </head>
@@ -11,7 +12,7 @@
     <header style="width: 100%;">
         <nav>
             <div class="nav-levo">
-                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i id="planeta" class="fa fa-globe" aria-hidden="true"></i>
                 <a href="index.html">Home</a>
                 <a href="satori.html">Šatori</a>
                 <a href="rancevi.html">Rančevi</a>
@@ -35,9 +36,11 @@
         </div>
     </section>
     <section class="s2-container">
-        <h2>Zašto su naši proizvodi najtraženiji među planinarima?</h2>
+        <h2>Omiljeni izbor planinara – šator i ranac koji prave razliku</h2>
         <div class="s2-left">
-            <img src="./images/sator.jpg" alt="Slika satora" class="s2-l-slika">
+            <div class="s2-left-slika">
+                <img src="./images/sator.jpg" alt="Slika satora">
+            </div>
             <div class="s2-left-text">
                 <h3>Easy-Light Mount šator</h3>
                 <p><strong>Easy-Light Mount šator </strong>je savršeno rešenje za sve planinare koji traže kombinaciju praktičnosti i udobnosti. Njegova lagana konstrukcija omogućava lako postavljanje i transport, što ga čini idealnim za avanturiste koji žele smanjiti težinu svog tereta. Šator je izrađen od visokokvalitetnih, vodootpornih materijala koji pružaju zaštitu od nepovoljnih vremenskih uslova, uključujući kišu i vetar. Ova otpornost na vremenske prilike osigurava da ostanete suvi i zaštićeni tokom noći, bez obzira na to koliko su ekstremni uslovi napolju.
@@ -52,7 +55,10 @@
                     Osim toga, Mount 50l ranac dolazi sa dodatnim funkcijama kao što su mogućnost pričvršćivanja štapova za hodanje ili druge opreme spoljašnjosti ranca. Ove karakteristike čine ga izuzetno praktičnim izborom za sve one koji ne žele da prave kompromise kada je reč o kvalitetu svoje opreme.
                 </p>
             </div>
-            <img src="./images/ranac.jpg" alt="Slika satora" class="s2-r-slika">
+            <div class="s2-right-slika">
+                <img src="./images/ranac.jpg" alt="Slika satora">
+            </div>
+            
             
         </div>
     </section> 
@@ -68,7 +74,8 @@
                     <p>Ergonomski dizajn sa prilagodljivim trakama osigurava optimalnu raspodelu težine, što značajno smanjuje umor tokom dugih staza.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box-novo">
+                <div class="stiker">SOLD OUT</div>
                 <div class="box-img">
                     <img src="./images/ranac.jpg" alt="Slika satora" width="70px">
                 </div>
@@ -123,7 +130,8 @@
                     <p>Ergonomski dizajn sa prilagodljivim trakama osigurava optimalnu raspodelu težine, što značajno smanjuje umor tokom dugih staza.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box-novo">
+                <div class="stiker">NEW</div>
                 <div class="box-img">
                     <img src="./images/sator.jpg" alt="Slika satora" width="70px">
                 </div>
@@ -143,8 +151,72 @@
             </div>
         </div>
     </section> 
+
+    <section class="s4-container">
+        <h2> Zašto baš naši proizvodi?</h2>
+        <div class="razlozi-grid">
+
+            <div class="razlog">
+                <div class="kolona1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="kolona2">
+                    <h3>Izdržljivost u ekstremnim uslovima</h3>
+                    <p>Naši proizvodi su testirani na vetru, kiši, snegu i suncu – spremni su za svaki izazov prirode.</p>
+                </div>
+            </div>
+            <div class="razlog">
+                <div class="kolona1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="kolona2">
+                    <h3>Ergonomski i funkcionalni dizajn</h3>
+                    <p>Svaki detalj je osmišljen da olakša tvoju avanturu – manje tereta, više komfora.</p>
+                </div>
+            </div>
+            <div class="razlog">
+                <div class="kolona1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="kolona2">
+                    <h3>Laki i kompaktni</h3>
+                    <p>Bez nepotrebnog opterećenja – naši rančevi, šatori i oprema lako se pakuju i nose.</p>
+                </div>
+            </div>
+            <div class="razlog">
+                <div class="kolona1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="kolona2">
+                    <h3>Višestruka upotreba</h3>
+                    <p>Jedan proizvod – mnogo funkcija. Pametna rešenja za sve situacije na terenu.</p>
+                </div>
+            </div>
+            <div class="razlog">
+                <div class="kolona1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="kolona2">
+                    <h3>Ekološki materijali</h3>
+                    <p>Brinemo o prirodi jednako kao i ti – koristimo održive i reciklirane materijale gde god je moguće.</p>
+                </div>
+            </div>
+            <div class="razlog">
+                <div class="kolona1">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="kolona2">
+                    <h3>Proverena pouzdanost</h3>
+                    <p>Godinama nas biraju planinari, kamp entuzijasti i outdoor avanturisti – jer znaju da mogu da nam veruju.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
     <footer>
-        <i class="fa fa-globe" aria-hidden="true" style="font-size:80px; padding:10px 50px 10px 30px;"></i>
+        <i id="planeta" class="fa fa-globe" aria-hidden="true" style="font-size:80px; padding:10px 50px 10px 30px;"></i>
         <div class="f-desno">
             
             <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:mejl@gmail">Kontaktirajte nas putem mejl naloga</a></i>

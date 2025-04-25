@@ -25,7 +25,14 @@ nav {
     font-size: 25px;
     color:  #fffcf2;
 }
-
+/*ROTACIJA PLANETE*/
+#planeta{
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+#planeta:hover {
+    transform: rotateY(180deg);
+}
 .nav-levo a {
     color: #fffcf2;
     text-decoration: none;
@@ -111,12 +118,20 @@ video {
     padding: 8px 16px;
     cursor: pointer;
     border: none;
+    /*background-image: linear-gradient(to right, #2e5577, #011e20);*/
+    background-image: linear-gradient(to right, #234059, #11afbb);
+    
+}
+.hero-button button:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 .hero-button button a{
     color:  #fffcf2;
     text-decoration: none;
     font-size: 150%;
 }
+/*SEKCIJA 2*/
 .s2-container{
     width: 100%;
     background-color:#13293D;
@@ -130,14 +145,18 @@ video {
     padding-bottom: 30px;
     padding-top: 20px;
 }
-.s2-l-slika, .s2-r-slika{
-    width: 20%;
-    border-radius: 5%;
+.s2-left, .s2-right{ 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.s2-left, .s2-right{
-    display: flex;
-    flex-direction: row;
-    padding: 25px 50px;
+.s2-left{
+    margin-bottom: 35px;
+}
+.s2-left-slika img, .s2-right-slika img {
+    width: 100%;
+    height: auto;
 }
 .s2-right-text, .s2-left-text{
     display: flex;
@@ -151,7 +170,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fffcf2;
+    color: rgb(255, 252, 242);
     padding: 30px 20px;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
@@ -159,35 +178,63 @@ video {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    color: #13293D;/*rgb(215, 215, 174)*/
-    background-color:rgb(204, 204, 183);
+    color: #13293D;
+    background-color: rgb(255, 255, 245,0.65);
     width: 20%;
     border-radius: 10px;
 }
 .all-box{
-    display: flex;
+   /* display: flex;
     flex-direction: row;
     margin: 20px 5px;
+    gap: 20px;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    margin: 20px 5px;
 }
-.box{ 
+.box, .box-novo{ 
     background-color: #13293D ;
     border-radius: 5%;
     font-size: 15px;
     box-shadow: 5px 5px 10px rgb(123, 120, 120);
-   
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-top: 18px;
 }
-.box:hover{
+.box-novo{
+    position: relative;
+}
+.stiker{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background-color: rgb(188, 7, 67);
+    color: white;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    animation: swing 2s infinite ease-in-out;
+}
+@keyframes swing {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(5deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+.box:hover,.box-novo:hover{
     transform: scale(1.05);
     transition: 0.5s;
 }
 .box-img img{
     border: white solid 2px;
-    border-radius: 5%;
     width: 100%;
-}
-.box-img{
-    margin: 12px;
+    border-radius: 10px 10px 0 0;
+    
 }
 .box-opis{
     margin: 10px 30px;
@@ -199,7 +246,7 @@ video {
 /*CITAT 174700  69a54d*/
 .quote {
     width: 100%;
-    background-color: rgb(215, 215, 174);
+    background-color: rgb(255, 255, 245,0.65);
     text-align: center;
     padding: 40px 0;
 }
@@ -221,6 +268,57 @@ video {
     slate grey: 878e99
     bez: rgb(215, 215, 174) ili rgb(215, 215, 174)
 */
+
+/*SEKCIJA 4 - ZASTO MI*/
+.s4-container{
+    background-color: rgb(255, 255, 245,0.65);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.s4-container h2{
+    color: #13293D;
+    padding: 20px 10px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.razlozi-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px auto;
+}
+.razlog{
+    background-color: #13293D;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin: 5px;
+    max-width: 500px;
+}
+.kolona1{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 245);
+    border-radius: 10px 0 0 10px;
+}
+.kolona1 i{
+    color: #13293D;
+}
+.kolona2{
+    color: #fffcf2;
+    padding: 12px;
+}
+.kolona2 h3{
+    padding-bottom: 10px;
+}
+
 /*FOOTER*/
 footer {
     display: flex;
