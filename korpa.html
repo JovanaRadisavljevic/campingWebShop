@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Korpa</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/korpa.css">
 </head>
 <body>
-    
+    <header style="width: 100%;">
+        <nav>
+            <div class="nav-levo">
+                <i id="planeta" class="fa fa-globe" aria-hidden="true"></i>
+                <a href="index.html">Home</a>
+                <a href="satori.html">Šatori</a>
+                <a href="rancevi.html">Rančevi</a>
+                <a href="recepti.html">Recepti</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="nav-desno">
+                <a href="korpa.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Korpa</a>
+                <button><a href="prijava.html">Prijavi se</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="korpa">
+        <h2>Proizvodi u korpi</h2>
+        <div class="sviproizvodi">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proizvod</th>
+                        <th>Cena</th>
+                        <th>Kolicina</th>
+                        <th>Ukupno</th>
+                        <th>Obrisi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="proizvodslika"><img src="images/ranac.jpg" alt="Slika ranca">Ranac za planinarenje</td>
+                        <td>7.900 RSD</td>
+                        <td><input type="number" name="" id="" min="0" value="1"></td>
+                        <td>15.800 RSD</td>
+                        <td><button class="obrisi" type="button"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="proizvodslika"><img src="images/sator.jpg" alt="Slika ranca">Sator za kampovanje</td>
+                        <td>7.900 RSD</td>
+                        <td><input type="number" name="" id="" min="0" value="1"></td>
+                        <td>7.900 RSD</td>
+                        <td><button class="obrisi" type="button"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="proizvodslika"><img src="images/sator.jpg" alt="Slika ranca">Sator za kampovanje </td>
+                        <td>7.900 RSD</td>
+                        <td><input type="number" name="" id="" min="0" value="1"></td>
+                        <td>7.900 RSD</td>
+                        <td><button class="obrisi" type="button" class="obrisi"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="socials">
+                <i class="fa fa-globe" aria-hidden="true" style="font-size:80px; padding:10px 50px 10px 30px;"></i>
+            <div class="f-desno">
+                <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:mejl@gmail">Kontaktirajte nas putem mejl nalog</a></i>
+                <i class="fa fa-user-circle-o" aria-hidden="true"><a href="tel:+38165656565">Kontaktirajte nas putem telefona</a></i>
+                <i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/">Instagram</a></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"><a href="https://www.facebook.com/">Facebook</a></i>
+                
+            </div>
+            </div>
+            
+            <div class="f-levo">
+                <h3>Možete nas naći na sledećoj adresi</h3>
+                
+                <p>Marka Marica 58</p>
+                <p>Radnim danima od 08-20h</p>
+                <p>Subotom od 08-14h</p>
+                <p>Nedeljom ne radimo</p>
+            </div>
+            <div class="dostava">
+                <h3>Nacin dostave</h3>
+                <p>Porudzbine koje su kreirane online stizu na kucnu dostavu u roku od 2 do 3 dana sa besplatnom dostavom. Takodje moguce je preuzeti porudzbinu u nasoj radnji u skaldu sa radnim vremenom.</p>
+            </div>
+            
+        </div>
+   
+        <p>&copy; 2025 Kamp i oprema. Slike i video materijal preuzeti sa Pexels.</p>
+
+</footer>
 </body>
 </html>

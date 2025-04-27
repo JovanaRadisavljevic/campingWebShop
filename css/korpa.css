@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fffcf2;
+}
+.korpa{
+    background-color: #fffcf2;
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h2{
+    color: #13293D;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.sviproizvodikorpe{
+    padding: 50px;
+}
+
+table{
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #fffcf2;
+    background-color: #13293D;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+th,td{
+    border: 1px solid #ccc;  
+}
+th{
+    padding: 10px;
+}
+td{
+    padding: 5px;
+}
+th:first-child, td:first-child {
+    border-left: none; /* Uklanja border na levoj ivici */
+}
+
+th:last-child, td:last-child {
+    border-right: none; /* Uklanja border na desnoj ivici */
+}
+input{
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.obrisi{
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fffcf2;
+}
+.obrisi:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.proizvodslika{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
