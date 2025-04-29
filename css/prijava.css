@@ -8,8 +8,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    padding: 60px 20px;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
     background-image: url("../images/loginPozadina.jpg");
     background-size: cover;
     background-position: center;
@@ -22,60 +22,61 @@ section {
 .login-container {
     background-color: rgb(19, 41, 61,0.5);
     color: #fffcf2;
-    padding: 40px 30px;
-    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    border-radius: 0.75rem;
     width: 100%;
-    max-width: 450px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    max-width: 28rem;
+    box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin: 35px;
+    margin: 1rem;
 }
 
 .login-container h2 {
-    margin-bottom: 25px;
-    font-size: 28px;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
 }
 .login-container p{
     display: flex;
-    justify-content: flex-start;
-    padding: 17px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    font-size: 0.9rem;
 }
 .login-container a {
     text-decoration: none;
+    margin-left: 0.5rem;
     color: white;
-    margin-left: 21px;
 }
 
 .login-polja {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .login-polja input {
-    padding: 12px;
+    padding: 1rem;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius:0.675rem;
+    font-size:1rem;
 }
 .input-group{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 0.5rem;
 }
 .input-group i{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 20px;
+    margin: 0.8rem 0.8rem 0 0.8rem;
+    font-size: 1.25rem;
 }
 .input-group input{
-    padding: 10px;
+    padding: 0.8rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #fff;
     width: 100%;
+    font-size: 1rem;
 }
 .input-group input:focus{
     outline: none;
@@ -83,18 +84,91 @@ section {
 }
 
 #dugme-prijava {
-    background-color: #005f73;
     background-image: linear-gradient(to right, #234059, #11afbb);
     color: #fffcf2;
-    padding: 12px 25px;
+    padding: 0.8rem 2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 35%;
+    max-width: 20rem;
     transition: background-color 0.3s ease;
 }
 
 #dugme-prijava:hover {
     opacity: 0.9;
     transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .login-container {
+        padding: 2rem 1.25rem;
+    }
+    
+    .input-group input {
+        padding: 0.7rem;
+    }
+    
+    #dugme-prijava {
+        padding: 0.7rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .login-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .login-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .login-container p {
+        font-size: 0.85rem;
+        justify-content: center;
+    }
+    
+    .input-group i {
+        font-size: 1.1rem;
+    }
+    
+    .input-group input {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    #dugme-prijava {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .login-container {
+        margin: 0.5rem;
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .input-group {
+        gap: 0.3rem;
+    }
+    
+    .input-group i {
+        font-size: 1rem;
+    }
+    
+    .login-container p {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .login-container a {
+        margin-left: 0;
+    }
 }

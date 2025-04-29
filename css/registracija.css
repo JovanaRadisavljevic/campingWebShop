@@ -3,35 +3,43 @@ body{
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .registracija-section{
     background-color: rgba(19, 41, 61, 0.5);
-    margin: 100px auto;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    width: 90%;
+    max-width: 32rem;
 }
 .registracija-section h2{
     color: white;
     text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
 }
 .input-group{
     display: flex;
     align-items: center;
     background-color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
 }
 .input-group i{
-    font-size: 20px;
-    margin: 0 10px;
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
     color: #13293D;
 }
 .input-group input{
-    padding: 10px;
+    padding: 0.7rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #fff;
     width: 100%;
 }
@@ -41,7 +49,6 @@ body{
 }
 .input-group select{
     width: 100%;
-    padding: 10px;
     border: none;
 }
 .form-container{
@@ -52,26 +59,117 @@ body{
     display: flex;
      align-items: center;
      justify-content: flex-start;
-     margin: 20px 20px 20px 10px;
-     font-size: 14px;
      flex-direction: row;
-     gap: 20px;
-     font-size: 18px;
+     margin: 1.5rem 0;
+    font-size: 0.9rem;
+    gap: 0.75rem;
 }
+.uslovi label {
+    cursor: pointer;
+}
+
 .dugme-submit{
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
+    width: 40%;
+    max-width: 20rem;
+    margin: 1.5rem auto;
+    padding: 0.9rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-image: linear-gradient(to right, #234059, #11afbb);
     color: white;
-    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    font-size: medium;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .dugme-submit:hover {
     opacity: 0.9;
     transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .registracija-section {
+        padding: 1.75rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+    
+    .input-group {
+        padding: 0.7rem;
+    }
+    
+    .input-group i {
+        font-size: 1.1rem;
+    }
+    
+    .input-group input,
+    .input-group select {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    
+    .uslovi {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-position: center;
+    }
+    
+    .registracija-section {
+        margin: 0 auto;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        width: 95%;
+    }
+    
+    .input-group {
+        padding: 0.6rem;
+        margin: 0.5rem 0;
+    }
+    
+    .input-group i {
+        font-size: 1rem;
+    }
+    
+    .input-group input,
+    .input-group select {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .uslovi {
+        margin: 1.25rem 0;
+    }
+    
+    .dugme-submit {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .registracija-section {
+        padding: 1.25rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+    
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .uslovi {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+    
+    .dugme-submit {
+        width: 100%;
+    }
 }

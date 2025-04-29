@@ -3,63 +3,72 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fffcf2;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .kategorijeikatalog {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    padding: 25px 20px; 
-    margin-top: 70px;
-    gap: 20px;
+    padding: 1.5625rem 1.25rem; 
+    margin-top: 4.375rem;
+    gap: 1.25rem;
+    box-sizing: border-box;
 }
 
 .filteripretraga {
-    padding: 20px;
+    padding: 1.25rem; 
 }
 
 .filteripretraga h3 {
     color: #13293D;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
+    font-size:1.4rem;
 }
 
 .kategorije {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .kategorija {
-    border-bottom: 1px solid #63625f; 
-    padding-bottom: 10px;
+    border-bottom: 0.0625rem solid #63625f; /* 1px */
+    padding-bottom: 0.625rem; /* 10px */
 }
 
 
 .kategorija h4 {
     color: #13293D;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; 
+    font-size: 1.1rem; 
 }
 
 .podkategorije {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .podkategorije li {
     color: #13293D;
-    padding: 4px 0;
+    padding: 0.25rem 0; /* 4px */
+    font-size:1rem;
 }
 .podkategorije li input{
-    margin-right: 10px;
+    margin-right: 0.625rem; 
 }
 .pretraga {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #13293D; 
-    color: #fffcf2; 
+    margin-top: 1.25rem; /* 20px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    background-color: #13293D;
+    color: #fffcf2;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     cursor: pointer;
     font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .pretraga:hover {
@@ -73,65 +82,77 @@ body {
 }
 .ponuda h2{
     color: #13293D;
-    padding-bottom: 17px;
+    padding-bottom: 1.0625rem; /* 17px */
+    font-size: 1.5rem; 
 }
 .svirancevi{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 20px 5px;
+    padding: 1.25rem 0;
+    gap: 0.5rem;
 }
 .ranac, .ranac-stiker{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem;
     max-width: 265px;
     margin-right: 20px;
     margin-bottom: 10px;
-    border: 1px solid #d7dade;
-    padding: 10px;
-    border-radius: 8px;
+    border: 0.0625rem solid #d7dade;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
     align-items: center;
 }
-.ranac p , .ranac-stiker p,span{
-    font-size: 14px;
+.ranac:hover, .ranac-stiker:hover {
+    transform: translateY(-0.3125rem); /* -5px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2); /* 0 4px 8px */
+}
+
+.ranac p, .ranac-stiker p, .ranac span, .ranac-stiker span {
+    font-size: 0.875rem; /* 14px */
+    margin: 0.125rem 0; /* 2px */
+    text-align: center;
 }
 .ranac img , .ranac-stiker img{
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 .info{
-    margin-top: 5px;
-    padding: 5px 10px;
-    background-color: #f4e90e; 
-    color: #13293D; 
+    margin-top: 0.3125rem; /* 5px */
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    background-color: #f4e90e;
+    color: #13293D;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     cursor: pointer;
     font-weight: 400;
+    font-size: 0.875rem; /* 14px */
 }
 .info:hover{
     background-color: #dbd226; 
 }
 .dodaj{
-    margin-top: 5px;
-    padding: 5px 10px;
-    background-color: #13293D; 
-    color: #fffcf2; 
+    margin-top: 0.3125rem; /* 5px */
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    background-color: #13293D;
+    color: #fffcf2;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     cursor: pointer;
     font-weight: 400;
+    font-size: 0.875rem;
 }
 .dodaj:hover{
     background-color: #2c4660; 
 }
 .staracena{
     text-decoration: line-through;
+    color: #63625f;
  }
  .trenutna{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #13293D;
  }
@@ -140,15 +161,15 @@ body {
  }
  .stiker-kategorija{
     position: absolute;
-    top: -10px;
-    right: -5px;
+    top: -0.625rem; /* -10px */
+    right: -0.3125rem; /* -5px */
     background-color: rgb(188, 7, 67);
     color: white;
-    padding: 2px 8px;
+    padding: 0.125rem 0.5rem; /* 2px 8px */
     font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-   
+    border-radius: 0.3125rem; /* 5px */
+    box-shadow: 0.125rem 0.125rem 0.375rem rgba(0,0,0,0.2); /* 2px 2px 6px */
+    font-size: 0.75rem; /* 12px */
     animation: swing 2s infinite ease-in-out;
 }
 @keyframes swing {
@@ -161,26 +182,79 @@ body {
 .paginacija {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    gap: 10px;
+    margin-top: 1.875rem; /* 30px */
+    gap: 0.625rem; /* 10px */
 }
 .page-btn {
     background-color: #13293D;
     color: #fffcf2;
     border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: 0.3125rem; /* 5px */
+    padding: 0.625rem 0.9375rem; /* 10px 15px */
     cursor: pointer;
+    font-size: 0.875rem;
 }
 
 .page-btn:hover {
     background-color: #fffcf2;
     color: #13293D;
-    border: 1px solid #13293D;
+    border: 0.0625rem solid #13293D; 
 }
 .page-btn.active {
     background-color: #fffcf2;
     color: #13293D;
     font-weight: bold;
-    border: 1px solid #13293D;
+    border: 0.0625rem solid #13293D;
+}
+@media (max-width: 768px) { 
+    .kategorijeikatalog {
+        grid-template-columns: 1fr;
+        margin-top: 3.75rem; /* 60px */
+    }
+    .ranac{
+        max-width: 150px;
+    }
+    
+    .filteripretraga {
+        margin-bottom: 1.25rem; /* 20px */
+    }
+    
+    .svirancevi {
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); /* 224px */
+    }
+}
+@media (max-width: 576px) { 
+    .kategorijeikatalog {
+        padding: 1.25rem 0.625rem; /* 20px 10px */
+    }
+    
+    .ponuda h2 {
+        font-size: 1.25rem; /* 20px */
+    }
+    
+    .ranac, .ranac-stiker {
+        max-width: none;
+    }
+    
+    .page-btn {
+        padding: 0.5rem 0.75rem; /* 8px 12px */
+        min-width: 2.1875rem; /* 35px */
+    }
+}
+@media (max-width: 480px) { 
+    .svirancevi {
+        grid-template-columns: 1fr;
+    }
+    
+    .filteripretraga {
+        padding: 0.9375rem; /* 15px */
+    }
+    
+    .kategorija h4 {
+        font-size: 1rem; /* 16px */
+    }
+    
+    .podkategorije li {
+        font-size: 0.875rem; /* 14px */
+    }
 }
