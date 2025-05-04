@@ -207,12 +207,8 @@ body {
     border: 0.0625rem solid #13293D;
 }
 @media (max-width: 768px) { 
-    .kategorijeikatalog {
-        grid-template-columns: 1fr;
-        margin-top: 3.75rem; /* 60px */
-    }
     .ranac{
-        max-width: 150px;
+        max-width: 200px;
     }
     
     .filteripretraga {
@@ -223,17 +219,9 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); /* 224px */
     }
 }
-@media (max-width: 576px) { 
-    .kategorijeikatalog {
-        padding: 1.25rem 0.625rem; /* 20px 10px */
-    }
-    
-    .ponuda h2 {
-        font-size: 1.25rem; /* 20px */
-    }
-    
+@media(max-width:800px){
     .ranac, .ranac-stiker {
-        max-width: none;
+        max-width: 200px;
     }
     
     .page-btn {
@@ -241,6 +229,7 @@ body {
         min-width: 2.1875rem; /* 35px */
     }
 }
+
 @media (max-width: 480px) { 
     .svirancevi {
         grid-template-columns: 1fr;
