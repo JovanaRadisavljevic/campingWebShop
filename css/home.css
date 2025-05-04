@@ -58,7 +58,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-    
     .nav-levo, .nav-desno {
         display: none;
     }
@@ -547,6 +546,13 @@ footer{
     .footer{
         grid-template-columns: 1fr 1fr;
     }
+    .hero h1{
+        text-align: left;
+        font-size:4.3rem;
+    }
+    .hero p{
+        font-size: 1.3rem;
+    }
 }
 @media(max-width:480px){
     .all-box{
@@ -555,7 +561,17 @@ footer{
     .box, .box-novo{ 
         max-width: 200px;
     }
-    
+    .s4-container h2{
+        font-size: 2rem;
+    }
+    .razlozi-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+        max-width:500px;
+    }
+    .kolona2 p{
+        font-size: 0.85rem;
+    }
 }
 @media(max-width:830px){
     .footer{

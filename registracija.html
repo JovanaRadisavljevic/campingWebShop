@@ -30,45 +30,45 @@
     <section class="registracija-section">
         <h2>Kreiraj nalog</h2>
         <div class="form-container">
-            <form >
+            <form id="formaRegistracija">
                 <div class="input-group">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <input type="text" name="ime_prezime" placeholder="Ime i prezime" required><br>
+                    <input id="ime_prezime" type="text" name="ime_prezime" placeholder="Ime i prezime" required><br>
                 </div>
                 
                 <div class="input-group">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="email" name="email" placeholder="Unesite vaš email" required><br>
+                    <input id="email" type="email" name="email" placeholder="Unesite vaš email" required><br>
                 </div>
                 
                 <div class="input-group">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" name="lozinka" placeholder="Unesite lozinku" required><br>
+                    <input id="lozinka" type="password" name="lozinka" placeholder="Unesite lozinku" required><br>
                 </div>
                 
                 <div class="input-group">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" name="ponovi_lozinku" placeholder="Ponovite lozinku" required><br>
+                    <input id="ponovi_lozinku" type="password" name="ponovi_lozinku" placeholder="Ponovite lozinku" required><br>
                 </div>
                 
                 <div class="input-group">
                     <i class="fa fa-phone" aria-hidden="true"></i>
-                    <input type="text" name="telefon" placeholder="Unesite vaš telefon" required><br>
+                    <input id="telefon" type="text" name="telefon" placeholder="Unesite vaš telefon" required><br>
                 </div>
                 
                 <div class="input-group">
                     <i class="fa fa-address-book" aria-hidden="true"></i>
-                    <input type="text" name="adresa" placeholder="Unesite vašu adresu" required><br>
+                    <input id="adresa" type="text" name="adresa" placeholder="Unesite vašu adresu" required><br>
                 </div>
                 
                <div class="input-group">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <input type="date" name="datum_rodjenja" placeholder="Unesite vaš datum rođenja" required><br>
+                    <input id="datum_rodjenja" type="date" name="datum_rodjenja" placeholder="Unesite vaš datum rođenja" required><br>
                 </div>
             
                 <div class="input-group">
                     <i class="fa fa-venus-mars" aria-hidden="true"></i>
-                    <select name="pol" required>  
+                    <select id="pol" name="pol" required>  
                         <option value="" disabled selected>Odaberite pol</option>
                         <option value="muski">Muški</option>
                         <option value="zenski">Ženski</option>
@@ -76,11 +76,11 @@
                 </div>
 
                 <div class="uslovi">
-                    <input type="checkbox" name="prihvatam" id="prihvatam" required />
+                    <input id="uslov" type="checkbox" name="prihvatam" id="prihvatam" required />
                     <label for="prihvatam">Prihvatam uslove</label>
                 </div>
                 
-                <button class="dugme-submit">Registruj se</button>
+                <button id="registracijaBtn" class="dugme-submit">Registruj se</button>
                 
             </form>
         </div>
@@ -117,6 +117,7 @@
    
         <p>&copy; 2025 Kamp i oprema. Slike i video materijal preuzeti sa Pexels.</p>
 
-</footer>
+    </footer>
+    <script src="/js/registracija.js"></script>
 </body>
 </html>
