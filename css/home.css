@@ -35,7 +35,6 @@ nav {
     background-color: #13293D;
     padding: 10px;
     position: absolute;
-    top: 100%;
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -59,7 +58,10 @@ nav {
 
 @media (max-width: 768px) {
     .nav-levo, .nav-desno {
-        display: none;
+        display: none !important;
+    }
+    nav{
+        padding: 0;
     }
 
     .hamburger {
