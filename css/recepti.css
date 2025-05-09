@@ -1,4 +1,6 @@
-
+body{
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
 video {
     object-fit: cover;
     width: 100%;
@@ -17,7 +19,6 @@ video {
     align-items: center;
     padding: 0 1rem;
     text-align: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 
 .videosekcija > h2 {
@@ -32,22 +33,23 @@ video {
 
 
 .recepti {
-    background-color: #fffcf2;
+    background-color: transparent;
     padding: 3rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: grid;
+    /*flex-direction: column;*/
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.recepti h3{
-    font-size: 2rem;
-}
+
 
 .recept, .recept-aktivan {
     background-color: #f8f9fa; /* svetla nijansa bele */
     border-radius: 0.625rem; /* 10px */
     padding: 1.5rem;
-    max-width: 1000px;
+    max-width: 600px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -146,3 +148,4 @@ video {
       gap: 1rem;
     }
   }
+
